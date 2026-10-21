@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio: Atributo</title>
+</head>
+<body>
+  <h1>Leer un atributo personalizado</h1>
+
+  <div id="widget" data-widget-name="menu">
+    Este elemento tiene un atributo data-widget-name.
+  </div>
+
+  <p id="resultado"></p>
+
+  <script>
+    // Seleccionamos el elemento que contiene el atributo.
+    const elemento = document.querySelector("[data-widget-name]");
+
+    // Leemos el valor del atributo.
+    const nombre = elemento.getAttribute("data-widget-name");
+
+    // Mostramos el valor en la página.
+    document.querySelector("#resultado").textContent =
+      "El valor de data-widget-name es: " + nombre;
+  </script>
+</body>
+</html>
