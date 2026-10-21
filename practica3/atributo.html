@@ -16,10 +16,10 @@
 
   <script>
     // Seleccionamos el elemento que contiene el atributo.
-    const elemento = document.querySelector("[data-widget-name]");
+    let elemento = document.querySelector("[data-widget-name]");
 
     // Leemos el valor del atributo.
-    const nombre = elemento.getAttribute("data-widget-name");
+    let nombre = elemento.getAttribute("data-widget-name");
 
     // Mostramos el valor en la página.
     document.querySelector("#resultado").textContent =
