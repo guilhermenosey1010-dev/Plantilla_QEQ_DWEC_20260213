@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enlaces con clase externo</title>
+
+  <style>
+    .externo {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>Enlaces con la clase externo</h1>
+
+  <ul>
+    <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+    <li><a href="https://www.freecodecamp.org">freeCodeCamp</a></li>
+    <li><a href="atributo.html">Ejercicio de atributo</a></li>
+    <li><a href="#informacion">Información de esta página</a></li>
+  </ul>
+
+  <h2 id="informacion">Información</h2>
+  <p>La clase externo da el color naranja a los enlaces externos.</p>
+
+  <script>
+    document.querySelectorAll('a[href*="://"]').forEach(enlace => {
+      enlace.classList.add("externo");
+    });
+  </script>
+</body>
+</html>
