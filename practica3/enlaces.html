@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enlaces externos</title>
+</head>
+<body>
+  <h1>Enlaces externos de color naranja</h1>
+
+  <ul>
+    <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+    <li><a href="https://www.freecodecamp.org">freeCodeCamp</a></li>
+    <li><a href="atributo.html">Ejercicio de atributo</a></li>
+    <li><a href="#informacion">Información de esta página</a></li>
+  </ul>
+
+  <h2 id="informacion">Información</h2>
+  <p>Los enlaces cuyo href contiene :// aparecen en naranja.</p>
+
+  <script>
+    // Seleccionamos todos los enlaces cuyo href contiene ://.
+    const enlacesExternos = document.querySelectorAll('a[href*="://"]');
+
+    // Cambiamos el color de cada enlace seleccionado.
+    enlacesExternos.forEach(function(enlace) {
+      enlace.style.color = "orange";
+    });
+  </script>
+</body>
+</html>
