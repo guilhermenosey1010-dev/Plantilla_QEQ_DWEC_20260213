@@ -49,6 +49,7 @@ Se aceptan enteros entre 1 y 100000 para mantener una tabla manejable. Se rechaz
 
 ## Entrega
 
+- `entrega/memoria.docx`: memoria editable en Word con explicaciones, capturas y un apartado para añadir el enlace del vídeo oculto de YouTube.
 - `entrega/memoria.pdf`: memoria con explicaciones y capturas reales del navegador.
 - `entrega/memoria.html`: versión editable en texto y visible en el navegador.
 - `entrega/capturas/`: capturas de las actividades, conversiones y progreso de freeCodeCamp.

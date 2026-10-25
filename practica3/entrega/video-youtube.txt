@@ -1,8 +1,8 @@
-ESTADO: pendiente de publicación en YouTube.
+ESTADO: el usuario realizará la publicación en YouTube.
 
 Vídeo preparado: demostracion.mp4 (explicación con subtítulos, sin voz).
 Visibilidad solicitada en el enunciado: Oculto.
 
 Una vez publicado, sustituir este texto por la URL real y añadir la misma URL
-al apartado Vídeo de memoria.html y memoria.pdf.
+al apartado Vídeo en YouTube de memoria.docx.
 No se ha publicado el vídeo ni se ha inventado un enlace.
