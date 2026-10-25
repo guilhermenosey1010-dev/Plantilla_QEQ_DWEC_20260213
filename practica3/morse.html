@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Código morse · Práctica 3</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="js/morse.js?v=2" defer></script>
+</head>
+<body>
+  <main>
+    <a class="volver" href="index.html">← Volver a las actividades</a>
+    <p class="etiqueta">Actividad 05</p>
+    <h1>Conversor de código morse</h1>
+    <p>Introduce texto o código morse. El programa detecta el formato y lo convierte automáticamente.</p>
+    <div class="panel">
+      <button type="button" id="convertir">Introducir mensaje</button>
+      <p>Los datos se recogen mediante <code>window.prompt()</code>.</p>
+      <p id="estado" role="status">Pulsa el botón para empezar.</p>
+      <section id="conversion" hidden aria-label="Resultado de la conversión">
+        <h2>Entrada</h2>
+        <p id="entrada" class="salida"></p>
+        <h2 id="tipo"></h2>
+        <p id="resultado" class="salida"></p>
+      </section>
+    </div>
+    <p class="nota">Un espacio separa las letras y dos espacios separan las palabras. Se muestran puntos (.) y rayas (—). También puedes escribir el guion del teclado (-) y el punto medio (·).</p>
+    <p>Alfabeto admitido: A-Z, Ñ, CH, Ü, 0-9 y los signos . , ? &quot; /. Las vocales con tilde se convierten a su vocal sin tilde; Ñ y Ü conservan su código.</p>
+    <p>Ejemplo: <code>HOLA MUNDO</code> → <code>.... ——— .—.. .—  —— ..— —. —.. ———</code>.</p>
+    <p>Alfabeto de referencia: <a href="https://es.wikipedia.org/wiki/C%C3%B3digo_morse#Alfabeto_morse">Código morse en Wikipedia</a>.</p>
+    <dialog id="dialogo-mensaje">
+      <form method="dialog">
+        <label for="mensaje-alternativo">Escribe texto o código morse</label>
+        <textarea id="mensaje-alternativo" rows="4" cols="50"></textarea>
+        <p>Un espacio entre letras morse y dos entre palabras.</p>
+        <button value="convertir">Convertir</button>
+        <button value="cancelar">Cancelar</button>
+      </form>
+    </dialog>
+  </main>
+</body>
+</html>

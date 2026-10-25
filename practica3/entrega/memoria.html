@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Memoria de la práctica 3</title><link rel="stylesheet" href="../estilos.css"><style>img{max-width:100%;height:auto;border:1px solid #c8d4df}figure{margin:22px 0}figcaption{color:#526578;font-size:.9rem}video{width:100%;max-width:900px}section{margin-bottom:45px}@media print{section{break-before:page}nav,video{display:none}}</style></head><body><main><nav><a href="../index.html">Volver a las actividades</a> · <a href="memoria.pdf">Abrir PDF</a></nav>
+<section><h1>Práctica 3</h1>
+<p>Objetos predefinidos en JavaScript</p>
+<p>Desarrollo Web en Entorno Cliente · 25 de octubre de 2026</p>
+<p>La práctica contiene la lectura de atributos, enlaces externos con estilos, los dos bloques solicitados de freeCodeCamp, un conversor de morse y una tabla de números primos.</p>
+<p>El código fuente y esta memoria están organizados dentro de la carpeta practica3 de la rama PRACTICA-3 del repositorio existente.</p>
+<p>GitHub: https://github.com/guilhermenosey1010-dev/Plantilla_QEQ_DWEC_20260213/tree/PRACTICA-3/practica3</p>
+<p>Vídeo local: demostracion.mp4. Incluye capturas del funcionamiento y explicación mediante subtítulos, sin narración de voz.</p>
+<p>Enlace de YouTube: PENDIENTE DE PUBLICACIÓN. Para cerrar la entrega hay que publicar el vídeo como Oculto e incorporar su URL real a esta memoria. No se ha inventado un enlace.</p>
+<p><a href="https://github.com/guilhermenosey1010-dev/Plantilla_QEQ_DWEC_20260213/tree/PRACTICA-3/practica3">Código fuente en GitHub</a></p><video controls preload="metadata" src="demostracion.mp4"></video>
+</section>
+<section><h1>1. Leer un atributo</h1>
+<p>Archivo: atributo.html. Se selecciona el elemento que contiene data-widget-name, se lee su valor con getAttribute y se muestra en el body con textContent.</p>
+<p>Resultado comprobado: El valor de data-widget-name es: menu. Se conserva la solución original y se incorpora navegación común.</p>
+<figure><img src="capturas/01-atributo.jpg" alt="Captura real del resultado de la actividad de atributos."><figcaption>Captura real del resultado de la actividad de atributos.</figcaption></figure>
+</section>
+<section><h1>2 y 3. Enlaces externos</h1>
+<p>Archivos: enlaces.html y enlace-clase.html. querySelectorAll selecciona los enlaces cuyo href contiene ://. La primera versión cambia style.color y la segunda añade la clase externo, definida con color naranja en CSS.</p>
+<p>Se comprobó que Wikipedia y freeCodeCamp tienen color rgb(255, 165, 0), mientras que el enlace relativo y el ancla local mantienen su color.</p>
+<figure><img src="capturas/02-enlaces.jpg" alt="Cambio directo de estilo con JavaScript."><figcaption>Cambio directo de estilo con JavaScript.</figcaption></figure>
+<figure><img src="capturas/03-enlace-clase.jpg" alt="Mismo resultado mediante la clase externo."><figcaption>Mismo resultado mediante la clase externo.</figcaption></figure>
+</section>
+<section><h1>4. freeCodeCamp</h1>
+<p>Se han completado los dos bloques pedidos y comprobado el progreso real en la plataforma: Depuración, 12 de 12 retos; Scripting básico de algoritmos, 16 de 16 retos.</p>
+<p>Los 28 archivos de solución están en freecodecamp/debugging y freecodecamp/basic-algorithm-scripting. Cada uno incluye el enlace a su reto. Todos superaron las pruebas de freeCodeCamp.</p>
+<p>Se trabajaron errores de sintaxis, tipos, llamadas a funciones, índices y bucles; además de cadenas, factoriales, búsquedas, booleanos y manipulación de arreglos.</p>
+<figure><img src="capturas/04-freecodecamp.jpg" alt="Progreso real de ambos bloques. Esta captura no implica haber completado toda la certificación."><figcaption>Progreso real de ambos bloques. Esta captura no implica haber completado toda la certificación.</figcaption></figure>
+</section>
+<section><h1>5. Texto a código morse</h1>
+<p>Archivos: morse.html y js/morse.js. El dato se solicita mediante window.prompt(). Si el navegador integrado no implementa ese método, se usa un diálogo HTML alternativo. Las capturas se obtuvieron en ese navegador integrado.</p>
+<p>La detección es automática: una entrada formada solo por puntos, rayas y espacios se descodifica; el resto se convierte a morse. Se usa un objeto como diccionario y otro con la correspondencia inversa.</p>
+<p>La tabla incluye A-Z, Ñ, CH, Ü, 0-9 y los signos de la referencia. La salida usa un espacio entre letras y dos entre palabras. Los espacios se conservan con white-space: pre-wrap.</p>
+<figure><img src="capturas/05-morse-texto.jpg" alt="Prueba con HOLA MUNDO: conversión a morse y resultado en el body."><figcaption>Prueba con HOLA MUNDO: conversión a morse y resultado en el body.</figcaption></figure>
+</section>
+<section><h1>5. Conversión inversa y validación</h1>
+<p>Al introducir ... --- ... se obtiene SOS. Se aceptan guiones de teclado y rayas largas, así como puntos normales o puntos medios.</p>
+<p>Una entrada vacía, un carácter no admitido o una secuencia desconocida produce un aviso. Cancelar permite volver a empezar. Se usa textContent para mostrar el resultado como texto.</p>
+<figure><img src="capturas/06-morse-inverso.jpg" alt="Detección automática de morse y conversión a SOS."><figcaption>Detección automática de morse y conversión a SOS.</figcaption></figure>
+<figure><img src="capturas/07-morse-error.jpg" alt="Aviso ante una secuencia de morse desconocida."><figcaption>Aviso ante una secuencia de morse desconocida.</figcaption></figure>
+</section>
+<section><h1>6. Números primos</h1>
+<p>Archivos: primos.html y js/primos.js. El límite se recoge con un input. Se valida que sea entero entre 1 y 100000, se comprueban los divisores hasta la raíz cuadrada y se construye una tabla en el body.</p>
+<p>Con 7, la tabla contiene 1, 2, 3, 5 y 7. El 1 es una referencia para reproducir el ejemplo del PDF: no se considera primo y el contador muestra 4 primos. Con 30 se encuentran 10 primos.</p>
+<figure><img src="capturas/08-primos-7.jpg" alt="Resultado que reproduce el ejemplo del enunciado."><figcaption>Resultado que reproduce el ejemplo del enunciado.</figcaption></figure>
+<figure><img src="capturas/09-primos-30.jpg" alt="Prueba adicional con límite 30."><figcaption>Prueba adicional con límite 30.</figcaption></figure>
+</section>
+<section><h1>6. Casos límite y comprobaciones</h1>
+<p>Con el límite 1 hay cero números primos. El valor 2.5, los negativos y el campo vacío muestran un aviso y retiran la tabla anterior.</p>
+<p>Las pruebas automáticas comprueban ambos sentidos del morse, todos los signos de su tabla, los espacios entre palabras, los errores de entrada y los extremos del cálculo de primos. También se verificaron las páginas con interacciones reales del navegador.</p>
+<p>Para repetir las pruebas desde la raíz del repositorio: node --test practica3/tests/algoritmos.test.js.</p>
+<p>La carpeta entrega incluye el vídeo local y un guion para grabar una versión con tu voz. La publicación en YouTube y la incorporación de su enlace real siguen pendientes.</p>
+<figure><img src="capturas/10-primos-1.jpg" alt="Límite 1: cero primos."><figcaption>Límite 1: cero primos.</figcaption></figure>
+<figure><img src="capturas/11-primos-error.jpg" alt="Se rechaza el número decimal."><figcaption>Se rechaza el número decimal.</figcaption></figure>
+</section>
+</main></body></html>

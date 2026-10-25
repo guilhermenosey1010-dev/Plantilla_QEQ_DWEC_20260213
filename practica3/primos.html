@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números primos · Práctica 3</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="js/primos.js" defer></script>
+</head>
+<body>
+  <main>
+    <a class="volver" href="index.html">← Volver a las actividades</a>
+    <p class="etiqueta">Actividad 06</p>
+    <h1>Números primos</h1>
+    <p>Introduce un entero positivo para ver los números primos entre 1 y ese número, ambos incluidos.</p>
+    <div class="panel">
+      <form id="formulario-primos" novalidate>
+        <label for="numero">Número límite</label>
+        <input type="number" id="numero" name="numero" min="1" max="100000" step="1" value="7" required aria-describedby="ayuda-numero">
+        <button type="submit">Calcular primos</button>
+        <p id="ayuda-numero">Admite enteros del 1 al 100000.</p>
+      </form>
+      <p id="estado" role="status">Pulsa «Calcular primos» para generar la tabla.</p>
+      <div class="tabla-contenedor" id="resultado"></div>
+    </div>
+    <p class="nota">El 1 no es un número primo. Se incluye como referencia al principio de la tabla para reproducir el ejemplo del enunciado: 1, 2, 3, 5, 7.</p>
+    <h2>Cómo se calcula</h2>
+    <p>Un número es primo cuando es mayor que 1 y solo es divisible entre 1 y él mismo. Basta comprobar los divisores hasta su raíz cuadrada.</p>
+  </main>
+</body>
+</html>

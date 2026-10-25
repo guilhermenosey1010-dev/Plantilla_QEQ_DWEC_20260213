@@ -1,0 +1,4 @@
+# Evitar que Git cambie los saltos de línea internos de los archivos de entrega.
+*.pdf binary
+*.mp4 binary
+*.jpg binary
