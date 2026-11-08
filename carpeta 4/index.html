@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 4</title>
+</head>
+<body>
+  <h1>Funciones con arrays</h1>
+  <h2>ordenar</h2>
+  <p id="ordenados"></p>
+  <h2>imparesOrdenados</h2>
+  <p id="impares"></p>
+  <h2>imparesDosCifras</h2>
+  <p id="dosCifras"></p>
+  <h2>frecuencia</h2>
+  <p id="frecuencias"></p>
+
+  <script src="js/arrays.js"></script>
+  <script>
+    document.getElementById("ordenados").textContent = ordenar(arr).join(", ");
+    document.getElementById("impares").textContent = imparesOrdenados(arr).join(", ");
+    document.getElementById("dosCifras").textContent = imparesDosCifras(arr).join(", ");
+    document.getElementById("frecuencias").textContent = JSON.stringify(frecuencia(arr));
+  </script>
+</body>
+</html>
