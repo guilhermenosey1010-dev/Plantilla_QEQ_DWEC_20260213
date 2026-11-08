@@ -7,5 +7,27 @@
 <body>
   <h1>Funciones con arrays</h1>
   <script src="js/arrays.js"></script>
+  <h2>ordenar</h2>
+  <script>
+    document.write(ordenar(arr));
+  </script>
+
+  <h2>imparesOrdenados</h2>
+  <script>
+    document.write(imparesOrdenados(arr));
+  </script>
+
+  <h2>imparesDosCifras</h2>
+  <script>
+    document.write(imparesDosCifras(arr));
+  </script>
+
+  <h2>frecuencia</h2>
+  <script>
+    let frecuencias = frecuencia(arr);
+    for (let i = 0; i < frecuencias.length; i++) {
+      document.write(frecuencias[i].numero + ": " + frecuencias[i].veces + " veces<br>");
+    }
+  </script>
 </body>
 </html>
