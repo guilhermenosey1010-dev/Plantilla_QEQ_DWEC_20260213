@@ -17,10 +17,26 @@
 
   <script src="js/arrays.js"></script>
   <script>
-    document.getElementById("ordenados").textContent = ordenar(arr).join(", ");
-    document.getElementById("impares").textContent = imparesOrdenados(arr).join(", ");
-    document.getElementById("dosCifras").textContent = imparesDosCifras(arr).join(", ");
-    document.getElementById("frecuencias").textContent = JSON.stringify(frecuencia(arr));
+    let ordenados = ordenar(arr);
+    for (let i = 0; i < ordenados.length; i++) {
+      document.getElementById("ordenados").textContent += ordenados[i] + " ";
+    }
+
+    let impares = imparesOrdenados(arr);
+    for (let i = 0; i < impares.length; i++) {
+      document.getElementById("impares").textContent += impares[i] + " ";
+    }
+
+    let dosCifras = imparesDosCifras(arr);
+    for (let i = 0; i < dosCifras.length; i++) {
+      document.getElementById("dosCifras").textContent += dosCifras[i] + " ";
+    }
+
+    let frecuencias = frecuencia(arr);
+    for (let i = 0; i < frecuencias.length; i++) {
+      document.getElementById("frecuencias").textContent +=
+        frecuencias[i].numero + ": " + frecuencias[i].veces + " veces. ";
+    }
   </script>
 </body>
 </html>
