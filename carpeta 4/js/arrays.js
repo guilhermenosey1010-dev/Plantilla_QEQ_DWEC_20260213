@@ -38,3 +38,8 @@ function frecuencia(numeros) {
 
   return resultado;
 }
+
+console.log(ordenar(arr));
+console.log(imparesOrdenados(arr));
+console.log(imparesDosCifras(arr));
+console.log(frecuencia(arr));

@@ -6,37 +6,6 @@
 </head>
 <body>
   <h1>Funciones con arrays</h1>
-  <h2>ordenar</h2>
-  <p id="ordenados"></p>
-  <h2>imparesOrdenados</h2>
-  <p id="impares"></p>
-  <h2>imparesDosCifras</h2>
-  <p id="dosCifras"></p>
-  <h2>frecuencia</h2>
-  <p id="frecuencias"></p>
-
   <script src="js/arrays.js"></script>
-  <script>
-    let ordenados = ordenar(arr);
-    for (let i = 0; i < ordenados.length; i++) {
-      document.getElementById("ordenados").textContent += ordenados[i] + " ";
-    }
-
-    let impares = imparesOrdenados(arr);
-    for (let i = 0; i < impares.length; i++) {
-      document.getElementById("impares").textContent += impares[i] + " ";
-    }
-
-    let dosCifras = imparesDosCifras(arr);
-    for (let i = 0; i < dosCifras.length; i++) {
-      document.getElementById("dosCifras").textContent += dosCifras[i] + " ";
-    }
-
-    let frecuencias = frecuencia(arr);
-    for (let i = 0; i < frecuencias.length; i++) {
-      document.getElementById("frecuencias").textContent +=
-        frecuencias[i].numero + ": " + frecuencias[i].veces + " veces. ";
-    }
-  </script>
 </body>
 </html>
